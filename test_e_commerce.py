@@ -1,11 +1,10 @@
-# import pytest
 from selenium import webdriver
 from selenium.webdriver.edge.options import Options
 from selenium.webdriver.common.by import By
 import time
 
-user = "hemantmorehm97@gmail.com"
-password = "Rudra$28"
+user = "8871426113"
+password = "Panther$28"
 options = Options()
 options.add_experimental_option("detach", True)
 
@@ -37,14 +36,14 @@ def test_login_to_website():
     time.sleep(1)
     sign_in = Test_global.driver.find_element(By.XPATH, "//input[@id = 'signInSubmit']")
     sign_in.click()
-    time.sleep(1)
+    time.sleep(10)
 
 
 def test_add_product_to_cart():
     search_box = Test_global.driver.find_element(By.XPATH, "//input[@id = 'twotabsearchtextbox']")
     time.sleep(1)
     search_box.send_keys("power of your subconscious mind book")
-    time.sleep(3)
+    time.sleep(2)
     search_icon = Test_global.driver.find_element(By.ID, "nav-search-submit-button")
     search_icon.click()
     time.sleep(2)
